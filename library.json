@@ -1,0 +1,66 @@
+{
+    "name": "dcs-bios-arduino-library",
+    "version": "0.2.11",
+    "description": "Connect input and output devices to the DCS: World flight simulator using DCS-BIOS.",
+    "keywords": [
+        "dcs", "dcs-bios"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jboecker"
+        },
+        {
+            "name": "Chris Collins",
+            "maintainer": true
+        }
+    ],
+    "frameworks": "arduino",
+    "platforms": "atmelavr",
+    "homepage": "http://dcs-bios.a10c.de/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kuroneko/dcs-bios-arduino-library.git"
+    },
+    "build": {
+        "includeDir": "src",
+        "srcDir": "src/internal"
+    },
+    "examples": [
+        {
+            "name": "DefaultSerial",
+            "base": "examples/DefaultSerial",
+            "files": [
+                "DefaultSerial.ino"
+            ]
+        },
+        {
+            "name": "IRQSerial",
+            "base": "examples/IRQSerial",
+            "files": [
+                "IRQSerial.ino"
+            ]
+        },
+        {
+            "name": "MasterCaution",
+            "base": "examples/MasterCaution",
+            "files": [
+                "MasterCaution.ino"
+            ]
+        },
+        {
+            "name": "RS485Master",
+            "base": "examples/RS485Master",
+            "files": [
+                "RS485Master.ino"
+            ]
+        },
+        {
+            "name": "RS485Slave",
+            "base": "examples/RS485Slave",
+            "files": [
+                "RS485Slave.ino"
+            ]
+        }
+    ]
+}
